@@ -8,9 +8,9 @@
 
 import Foundation
 
-println("Prompt test")
+print("Prompt test")
 
-let prompt: Prompt = Prompt(argv0: C_ARGV[0])
+let prompt: Prompt = Prompt(argv0: CommandLine.arguments[0])
 
 while (true) {
     if let line = prompt.gets() {
