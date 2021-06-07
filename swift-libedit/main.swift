@@ -10,7 +10,7 @@ import Foundation
 
 print("Prompt test")
 
-let prompt: Prompt = Prompt(argv0: CommandLine.arguments[0])
+let prompt: Prompt = Prompt(prompt: "> ", history: 42)
 
 while (true) {
     if let line = prompt.gets() {

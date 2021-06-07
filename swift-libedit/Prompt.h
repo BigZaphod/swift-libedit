@@ -10,7 +10,9 @@
 
 @interface Prompt : NSObject
 
-- (instancetype) initWithArgv0:(const char*)argv0;
+- (instancetype) initWithPrompt:(NSString *)promptText history:(int)count NS_DESIGNATED_INITIALIZER;
 - (NSString*) gets;
+
+@property (nonatomic, copy) NSString *prompt;
 
 @end
